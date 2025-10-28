@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3269345338876636" crossorigin="anonymous"></script>
+    <title>Full Unit Converter: Weight፣ Distance ፣Temperature - Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Unit Converter 🔄</h>
+        
+       
+
+        <div class="converter" id="tempConverter">
+            <h2>1.Temperature unit converter</h2>
+            <select id="tempConversionType" onchange="convertTemp()">
+                <option value="CtoF">degree Celsius (°C) to degree Fahrenheit (°F)</option>
+                <option value="FtoC">degree Fahrenheit (°F) to Celsius (°C)</option>
+            </select>
+            <input type="number" id="tempInputValue" oninput="convertTemp()" placeholder="Enter number ">
+            <p class="result-label">Result:</p>
+            <p id="tempResult" class="result-value">0 °F</p>
+        </div>
+
+        <div class="converter" id="weightConverter">
+            <h2>2.Weight converter</h2>
+            <select id="weightConversionType" onchange="convertWeight()">
+                <option value="kgToLbs">Kilogram (Kg) to Pound (Lbs)</option>
+                <option value="lbsToKg">Pound (Lbs) to kilogram (Kg)</option>
+            </select>
+            <input type="number" id="weightInputValue" oninput="convertWeight()" placeholder="Enter number">
+            <p class="result-label">Result:</p>
+            <p id="weightResult" class="result-value">0 Lbs</p>
+        </div>
+
+        <div class="converter" id="distanceConverter">
+            <h2>3. Distance unit Converter</h2>
+            <select id="distanceConversionType" onchange="convertDistance()">
+                <option value="kmToMiles">Kilometer(Km) to  Miles</option>
+                <option value="milesToKm"> Miles to Kilometer (Km)</option>
+            </select>
+            <input type="number" id="distanceInputValue" oninput="convertDistance()" placeholder="Enter number">
+            <p class="result-label">Result:</p>
+            <p id="distanceResult" class="result-value">0 Miles</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
